@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use App\Modules\Blog\Models\Category;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class CategoryTableSeeder extends Seeder {
 
@@ -13,28 +14,28 @@ class CategoryTableSeeder extends Seeder {
 		Category::create(array(
 				'name' => 'Test category - 1',
 				'slug' => 'test-category-1',
-				'description' => 'Test category - 1 Meta Desc'
+				'description' => 'Test category - 1 Meta Desc',
 			));
 
 		// Test category - 2
 		Category::create(array(
 				'name' => 'Test category - 2',
 				'slug' => 'test-category-2',
-				'description' => 'Test category - 2 Meta Desc'
+				'description' => 'Test category - 2 Meta Desc',
 			));
 
 		// Test category - 3
 		Category::create(array(
-				'name' => Test category - 3,
-				'slug' => test-category-3,
-				'description' => Test category - 3 Meta Desc
+				'name' => 'Test category - 3',
+				'slug' => 'test-category-3',
+				'description' => 'Test category - 3 Meta Desc',
 			));
 
 		// Test category - 4
 		Category::create(array(
 				'name' => 'Test category - 4',
 				'slug' => 'test-category-4',
-				'description' => 'Test category - 4 Meta Desc'
+				'description' => 'Test category - 4 Meta Desc',
 			));
 	}
 }
